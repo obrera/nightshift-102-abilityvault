@@ -6,8 +6,6 @@ services:
       PUBLIC_BASE_URL: "https://abilityvault102.colmena.dev"
     networks:
       - dokploy-network
-    ports:
-      - "3000:3000"
 
 networks:
   dokploy-network:
