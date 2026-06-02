@@ -8,7 +8,11 @@ export const appRouter = createBrowserRouter(
   [
     {
       children: [
-        { element: <Navigate replace to="/wallet" />, index: true },
+        { element: <Navigate replace to="/abilityvault" />, index: true },
+        {
+          lazy: () => import('@/abilityvault/feature/abilityvault-feature-entry'),
+          path: 'abilityvault',
+        },
         {
           lazy: () => import('@/about/feature/about-feature'),
           path: 'about',
@@ -27,9 +31,9 @@ export const appRouter = createBrowserRouter(
                 to: '/about',
               },
               {
-                description: 'Open the wallet screen if you were looking for connection and signing tools.',
-                title: 'Wallet',
-                to: '/wallet',
+                description: 'Open the AbilityVault builder, simulator, metadata preview, verifier, and mint flow.',
+                title: 'AbilityVault',
+                to: '/abilityvault',
               },
             ],
           }),
@@ -39,6 +43,7 @@ export const appRouter = createBrowserRouter(
       element: (
         <ShellFeature
           links={[
+            { label: 'AbilityVault', to: '/abilityvault' },
             { label: 'Wallet', to: '/wallet' },
             { label: 'About', to: '/about' },
           ]}

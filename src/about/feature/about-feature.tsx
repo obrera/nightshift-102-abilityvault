@@ -7,29 +7,27 @@ export function AboutFeature() {
         <CardHeader className="gap-2">
           <CardTitle className="text-xl font-semibold tracking-tight">About</CardTitle>
           <CardDescription className="max-w-2xl text-sm/6">
-            Nightshift 102 Abilityvault is a starter for Solana apps that need wallet connection, signing flows, cluster
-            switching, and a polished React UI from day one.
+            AbilityVault turns a playable class ability tree into a wallet-owned MPL Core devnet ability page with
+            deterministic metadata, SVG art, and verifier tooling.
           </CardDescription>
         </CardHeader>
         <CardContent className="grid gap-3 sm:grid-cols-3">
           <div className="rounded-lg border border-border/60 bg-muted/20 p-4">
-            <div className="text-sm font-medium">Wallet-ready flows</div>
+            <div className="text-sm font-medium">Ability page builder</div>
             <div className="mt-1 text-xs/relaxed text-muted-foreground">
-              Connect wallets, view balances, and test sign in, sign message, sign transaction, and send transaction
-              flows.
+              Tune class, role, element, passive, rune sockets, and tree nodes before committing a page.
             </div>
           </div>
           <div className="rounded-lg border border-border/60 bg-muted/20 p-4">
-            <div className="text-sm font-medium">Solana client setup</div>
+            <div className="text-sm font-medium">Wallet-signed Core mint</div>
             <div className="mt-1 text-xs/relaxed text-muted-foreground">
-              Includes Solana Kit client wiring, explorer links, and cluster-aware state for local development and
-              testing.
+              The connected devnet wallet signs as payer, owner, and update authority for the MPL Core asset.
             </div>
           </div>
           <div className="rounded-lg border border-border/60 bg-muted/20 p-4">
-            <div className="text-sm font-medium">Modern app shell</div>
+            <div className="text-sm font-medium">Verifier-ready metadata</div>
             <div className="mt-1 text-xs/relaxed text-muted-foreground">
-              Built with Vite, React, TypeScript, Tailwind CSS v4, and reusable UI primitives that are ready to extend.
+              Hono serves deterministic JSON and SVG routes for the page encoded by the minted asset URI.
             </div>
           </div>
         </CardContent>

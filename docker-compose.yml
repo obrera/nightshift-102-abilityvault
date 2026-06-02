@@ -1,0 +1,15 @@
+services:
+  abilityvault:
+    build: .
+    environment:
+      PORT: "3000"
+      PUBLIC_BASE_URL: "https://abilityvault102.colmena.dev"
+    networks:
+      - dokploy-network
+    ports:
+      - "3000:3000"
+
+networks:
+  dokploy-network:
+    external: true
+    name: dokploy-network
