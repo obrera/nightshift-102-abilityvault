@@ -28,7 +28,10 @@ The mint architecture is client-side and wallet-signed. There is no server signe
 ## Deployment Log
 
 - Local implementation completed in `/home/obrera/projects/nightshift-102-abilityvault`.
-- Pending after local gates: publish `obrera/nightshift-102-abilityvault`, add `beeman` as collaborator, deploy `https://abilityvault102.colmena.dev`, and verify HTTP 2xx.
+- Published public repo `https://github.com/obrera/nightshift-102-abilityvault`.
+- Added `beeman` as an admin collaborator invitation.
+- Fixed Dokploy deployment by removing the host `3000:3000` binding from `docker-compose.yml`; routing is handled by Dokploy/Traefik on `dokploy-network`.
+- Deployed to `https://abilityvault102.colmena.dev` and verified live GET HTTP 200 for `/` and `/api/health`.
 
 ## Additional Checks
 
@@ -39,4 +42,4 @@ The mint architecture is client-side and wallet-signed. There is no server signe
 
 ## Blockers
 
-- None for local build.
+- None.
